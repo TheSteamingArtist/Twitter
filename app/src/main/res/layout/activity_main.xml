@@ -7,15 +7,21 @@
     android:layout_height="match_parent"
     tools:context=".TimeLineActivity">
 
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="67dp"
+        app:srcCompat="@drawable/ic_baseline_cloud_24" />
+
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvTweets"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTweets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
