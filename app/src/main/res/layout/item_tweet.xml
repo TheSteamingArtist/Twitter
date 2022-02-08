@@ -24,6 +24,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="#000000"
         tools:text="stephen_jacot@bloomfield.edu" />
 
     <TextView
@@ -34,5 +35,8 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:textColor="#000000"
         tools:text="This is my tweet!!!" />
 </RelativeLayout>
