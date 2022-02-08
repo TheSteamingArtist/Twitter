@@ -1,6 +1,7 @@
 package com.codepath.apps.restclienttemplate;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -31,6 +32,8 @@ public class TimeLineActivity extends AppCompatActivity {
 
     SwipeRefreshLayout swipeContainer;
 
+    Toolbar toolbar;
+
     EndlessRecyclerViewScrollListener scrollListener;
 
     public static final String TAG = "TimeLineActivity";
@@ -39,6 +42,10 @@ public class TimeLineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = findViewById(R.id.twitterToolbar);
+
+        setSupportActionBar(toolbar);
 
         client = TwitterApplication.getRestClient(this);
 

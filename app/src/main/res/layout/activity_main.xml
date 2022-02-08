@@ -7,7 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".TimeLineActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/twitterToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/twitter_blue"/>
+
+
     <ImageView
+        android:id="@+id/topTwitter"
         android:layout_width="96dp"
         android:layout_height="67dp"
         app:srcCompat="@drawable/ic_baseline_cloud_24" />
@@ -15,7 +23,8 @@
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topTwitter">
 
 
         <androidx.recyclerview.widget.RecyclerView
