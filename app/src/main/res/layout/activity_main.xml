@@ -16,8 +16,10 @@
 
     <ImageView
         android:id="@+id/topTwitter"
-        android:layout_width="96dp"
-        android:layout_height="67dp"
+        android:layout_width="86dp"
+        android:layout_height="57dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         app:srcCompat="@drawable/ic_baseline_cloud_24" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
